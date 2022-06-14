@@ -17,7 +17,7 @@
             <td><%= @book_id.body %></td>
             <td><%= link_to 'Edit', edit_book_path(@book_id.id), :class => "btn btn-sm btn-success" %></td>
             <td><%= link_to 'Destroy', destroy_book_path(@book_id.id), method: :delete,
-                'date-confirm' => "本当に消しますか？", :class => "btn btn-sm btn-danger" %></td>
+                'data-confirm' => "本当に消しますか？", :class => "btn btn-sm btn-danger" %></td>
           </tr>
         </tbody>
       </table>
